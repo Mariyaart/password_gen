@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <h1>Password Generator</h1>
+        <div class="generator-box">
+            <div class="result-row">
+                <input type="text" id="password-display" readonly placeholder="Ваш пароль">
+                <button id="copy-btn">COPY</button>
+            </div>
+            <div class="slider-row">
+                <input type="range" id="length-slider" min="4" max="20" value="8">
+                <span id="length-value" class="number-display">8</span>
+            </div>
+            <div class="settings-grid">
+                <label class="check-container">
+                    <input type="checkbox" id="lowercase" checked>
+                    <span class="checkmark"></span> a-z
+                </label>
+                <label class="check-container">
+                    <input type="checkbox" id="uppercase">
+                    <span class="checkmark"></span> A-Z
+                </label>
+                <label class="check-container">
+                    <input type="checkbox" id="numbers">
+                    <span class="checkmark"></span> 0-9
+                </label>
+                <label class="check-container">
+                    <input type="checkbox" id="symbols">
+                    <span class="checkmark"></span> !@#$%^
+                </label>
+            </div>
+            <button id="generate-btn" class="main-generate-btn">GENERATE</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
